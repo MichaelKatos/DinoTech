@@ -1,0 +1,77 @@
+@import 'nib'
+@import 'variables.styl'
+@import 'fonts.styl'
+
+global-reset()
+
+body 
+    background black
+
+nav     
+    height 80px
+    padding 5px 0
+    border white
+    min-width 400px
+    // +between('m', 'l')
+    //     height 75px
+    +below('s')
+        text-align: center
+    div 
+        margin 0 8vw
+        // +between('m', 'l')
+        //     margin 0 35px
+        +below('m')
+            margin 0 2vw
+    ul  
+        float right
+    .nav-head
+        display inline
+        line-height 100%
+        vertical-align middle
+        font-family 'Prehistoric Caveman'
+        color dino-green
+        font-size 16px
+        text-shadow: -2px 2px 2px rgba(9, 215, 113, 0.25);
+        -webkit-text-shadow: -2px 2px 2px rgba(9, 215, 113, 0.25)
+        -moz-text-shadow: -2px 2px 2px rgba(9, 215, 113, 0.25)     
+        // +between('m', 'l')
+        //     font-size 14px
+        // +below('s')
+        //     font-size 12px
+        img 
+            vertical-align middle
+            margin-left -2px
+            margin-right 3.5px
+            -webkit-filter: drop-shadow (0px 0px 1.5px rgba(9, 215, 113, 0.25)) invert(10%)
+            filter: drop-shadow(0px 0px 1.5px rgba(9, 215, 113, 0.25)) invert(10%)  
+            width: auto;
+            max-width: 54px;
+            height: auto;
+
+            // +between('m', 'l')
+            //     line-height 60px
+    a 
+        text-decoration: none 
+    
+
+.right
+    float right
+    list-style-type none
+    margin 0
+    padding 0
+    overflow hidden
+    li 
+        display inline    
+    li a  
+        display inline
+        font-family Acme, sans-serif
+        font-size: 30px
+        color dino-green
+        text-align center
+        text-decoration: none
+        padding 0 15px
+ul:nth-child(3)
+    padding-right 0
+
+nav 
+    clearfix()
